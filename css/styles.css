@@ -1,0 +1,42 @@
+/* 
+========================
+= Author: Samuel Novoa =
+========================
+*/
+
+/*---------------------
+Variables Globales --*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-background-color: #092027;
+    --main-font-headers: 'Raleway', sans-serif;
+
+}
+
+/*--------------
+Tipografias --*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/*----------
+Headers --*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--main-font-headers);
+    font-weight: 700;
+}
+
+/*-------
+Body --*/
+body {
+    background-color: var(--main-background-color);
+    color: #fff;
+}
