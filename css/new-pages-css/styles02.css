@@ -1,0 +1,317 @@
+/*
+=================================================
+=              Author: Samuel Novoa             =
+= Description: CSS for [ actividad02-new.html ] =
+=================================================
+*/
+
+/*---------------------
+Global variables --*/
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+:root {
+     --main-background-color: #0a0701;
+     --main-font: 'Raleway', sans-serif;
+     --first-color: #CF8719;
+     --second-color: #FFA044;
+     --third-color: #FFC15E;
+}
+
+/*--------
+ Fonts --*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+p,
+li,
+ul,
+ol,
+div,
+section {
+     font-family: var(--main-font);
+     font-weight: 200;
+     color: #fff;
+}
+
+a {
+     font-family: var(--main-font);
+     font-weight: 200;
+     color: #fff;
+}
+
+/*----------
+ Headers --*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+     font-family: var(--main-font);
+     font-weight: 300;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     color: #fff;
+}
+
+/*-------------
+Scroll bar --*/
+::-webkit-scrollbar {
+     display: none;
+}
+
+/*-------------------
+ Reponsive Images --*/
+img {
+     width: 100%;
+     object-fit: cover;
+}
+
+/*--------
+ Body --*/
+body {
+     background-color: var(--main-background-color);
+}
+
+/*-------
+Main --*/
+main {
+     background-image: url(../../img/img-new-pages/layered-waves.svg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+
+     height: 100vh;
+     padding: 50px;
+}
+
+/*------------------------------*/
+/*----------------
+First Content --*/
+#first-content {
+     background-image: url(../../img/img-new-pages/layered-waves.svg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+
+/*-------
+Card --*/
+.card-hover {
+     width: 330px;
+     height: 400px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     color: white;
+     transition: 0.2s ease-in-out;
+
+     text-align: center;
+     cursor: url(../../img/img-new-pages/restaurant_menu.svg), auto;
+}
+
+.card-hover img {
+     width: 150px;
+     height: 150px;
+     border-radius: 100%;
+     object-fit: cover;
+     z-index: 1;
+}
+
+.content-card {
+     background-color: #151515;
+     padding: 20px;
+     width: 100%;
+}
+
+.text {
+     border-top: 1px solid var(--first-color);
+     background-color: #151515;
+     opacity: 0;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     gap: 15px;
+     transition: 0.2s ease-in-out;
+     z-index: 2;
+     padding: 20px;
+}
+
+.text>span {
+     color: var(--third-color)
+}
+
+.card-hover:hover>.text {
+     opacity: 1;
+}
+
+.card-hover:hover>.img {
+     height: 65%;
+     filter: blur(7px);
+     animation: anim 3s infinite;
+}
+
+@keyframes anim {
+     0% {
+          transform: translateY(0);
+     }
+
+     50% {
+          transform: translateY(-20px);
+     }
+
+     100% {
+          transform: translateY(0);
+     }
+}
+
+.card-hover:hover {
+     transform: scale(1.04) rotate(-1deg);
+}
+
+/*----------
+Columns --*/
+.container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+
+     width: 70%;
+     margin: 0 auto;
+}
+
+.item {
+     /* width: 30%; */
+     flex-basis: 50%;
+     margin-bottom: 1rem;
+     padding: 1rem;
+}
+
+/*---------
+Loader --*/
+#loader {
+     position: absolute;
+     left: 45%;
+     top: 40%;
+     z-index: 1;
+     background-image: linear-gradient(rgb(186, 66, 255) 35%, rgb(0, 225, 255));
+     width: 200px;
+     height: 200px;
+     animation: spinning82341 1.7s linear infinite;
+     text-align: center;
+     border-radius: 100px;
+     box-shadow: 0px -5px 20px 0px rgb(186, 66, 255), 0px 5px 20px 0px rgb(0, 225, 255);
+     -webkit-animation: spin 2s linear infinite;
+     animation: spin 2s linear infinite;
+}
+
+#second-loader {
+     background-color: var(--main-background-color);
+     width: 200px;
+     height: 200px;
+     border-radius: 100px;
+}
+
+@-webkit-keyframes spin {
+     0% {
+          -webkit-transform: rotate(0deg);
+     }
+
+     100% {
+          -webkit-transform: rotate(360deg);
+     }
+}
+
+@keyframes spin {
+     0% {
+          transform: rotate(0deg);
+     }
+
+     100% {
+          transform: rotate(360deg);
+     }
+}
+
+.show-content-animation {
+     position: relative;
+     -webkit-animation-name: showcontentanimation;
+     -webkit-animation-duration: 1s;
+     animation-name: showcontentanimation;
+     animation-duration: 1s
+}
+
+@keyframes showcontentanimation {
+     from {
+          bottom: -100px;
+          opacity: 0
+     }
+
+     to {
+          bottom: 0;
+          opacity: 1
+     }
+}
+
+#show-content {
+     display: none;
+     text-align: center;
+}
+
+/*---------------
+Hide Content --*/
+.hc {
+     display: block;
+}
+
+/*--------------
+ Media query --*/
+
+@media (max-width: 768px) {
+
+     /* -- Hide Content -- */
+     .hc {
+          display: none;
+     }
+
+
+     /* -- First Content -- */
+     #first-content {
+          height: 25vh;
+     }
+
+     /* -- Columns -- */
+     .container {
+          flex-direction: column;
+          align-items: center;
+          margin: 0px;
+          width: 100%;
+     }
+
+     .item {
+          width: 80%;
+          max-width: 400px;
+          padding: 0px;
+     }
+
+     /* -- Table -- */
+     table {
+          width: 100%;
+          margin: 0 auto;
+     }
+
+     td {
+          padding: 2px;
+     }
+
+     th {
+          font-weight: 500;
+          padding: 2px;
+     }
+}

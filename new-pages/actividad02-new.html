@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- CSS IMPORT -->
+     <link rel="stylesheet" href="../css/new-pages-css/styles02.css">
+     <!-- FONT IMPORT -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+     <title>Actividad 02 - Pagina Personalizada</title>
+</head>
+
+<body onload="loader_funtion()">
+     <div id="loader">
+          <div id="second-loader"></div>
+     </div>
+     <div style="display:none;" id="show-content" class="show-content-animation">
+          <main>
+               <div class="" style="height: 100px;" aria-hidden="false"></div>
+               <center>
+                    <h1>Comida Asiatica</h1><br>
+                    <h3>Los mejores platillos de la comida China!!</h3>
+               </center>
+               <div style="height: 100px;" aria-hidden="false"></div>
+               <div class="container">
+                    <div class="item">
+                         <div class="card-hover">
+                              <div class="content-card">
+                                   <img src="../img/bok-choi.jpg" alt=""><br><br>
+                                   <h2>Verduras en Salsa</h2>
+                              </div>
+                              <div class="text">
+                                   <span>Una receta muy sencilla</span>
+                                   <p class="">Esta receta es un delicioso guiso con verduras, pero las verduras son
+                                        sazonadas
+                                        previamente en una salsa dulzona de soja y miel.</p>
+                                   <br>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="item">
+                         <div class="card-hover">
+                              <div class="content-card">
+                                   <img src="../img/bok-choi.jpg" alt=""><br><br>
+                                   <h2>Salsas Agridulces</h2>
+                              </div>
+                              <div class="text">
+                                   <span>El mejor acompañamiento</span>
+                                   <p class="">Acompaña los alimentos son asados, horneados o a la con un adobo de salsa
+                                        agridulce.</p>
+                                   <br>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <center>
+                    <p>© 2023 Comida Asiatica</p>
+               </center>
+          </main>
+     </div>
+</body>
+<script>
+     var timer;
+
+     function loader_funtion() {
+          timer = setTimeout(content, 1);
+     }
+
+     function content() {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("show-content").style.display = "block";
+     }
+</script>
+
+</html>
