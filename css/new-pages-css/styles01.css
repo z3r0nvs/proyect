@@ -1,6 +1,6 @@
 /* 
 ================================================
-=              Author: Samuel Novoa            =
+=               Author: Samuel Novoa           =
 = Description: CSS for [ atividad01-new.html ] =
 ================================================
 */
@@ -282,6 +282,7 @@ Media query --*/
 
     /* -- Columns -- */
     .container {
+        display: block;
         flex-direction: column;
         align-items: center;
         margin: 0px;

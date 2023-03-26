@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- CSS IMPORT -->
+     <link rel="stylesheet" href="../css/new-pages-css/styles04.css">
+     <!-- FONT IMPORT -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+     <!-- ICONS IMPORT -->
+     <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+     <title>Actividad 04 - Pagina Personalizada</title>
+</head>
+
+<body>
+     <header>
+          <h1><span id="hide-title-pc">P<span style="color: orange;">F</span></span><span id="hide-title">Pedal
+                    <span style="color: orange;"> Faster</span></span><br></h1>
+          <span class="open" onclick="nav_active()">&#9776;</span>
+          <div id="nav" class="menu">
+               <a href="javascript:void(0)" class="x" onclick="nav_hide()">&times;</a>
+               <div class="menu-active">
+                    <a href="../index.html">Inicio</a>
+                    <a href="#acerca">Acerca</a>
+                    <a href="#noticias">Noticias</a>
+               </div>
+          </div>
+     </header>
+</body>
+<script>
+     function nav_active() {
+          document.getElementById("nav").style.width = "100%";
+     }
+
+     function nav_hide() {
+          document.getElementById("nav").style.width = "0%";
+     }
+</script>
+
+</html>

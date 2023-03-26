@@ -30,9 +30,10 @@ li,
 ul,
 ol,
 div,
-section {
+section,
+button {
      font-family: var(--main-font);
-     font-weight: 200;
+     font-weight: 400;
      color: #fff;
 }
 
@@ -40,6 +41,7 @@ a {
      font-family: var(--main-font);
      font-weight: 200;
      color: #fff;
+     text-decoration: none;
 }
 
 /*----------
@@ -102,12 +104,11 @@ First Content --*/
 /*-------
 Card --*/
 .card-hover {
-     width: 330px;
      height: 400px;
      display: flex;
      flex-direction: column;
      align-items: center;
-     justify-content: center;
+     justify-content: space-between;
      color: white;
      transition: 0.2s ease-in-out;
 
@@ -183,13 +184,13 @@ Columns --*/
      justify-content: center;
      align-items: center;
 
-     width: 70%;
+     width: 100%;
      margin: 0 auto;
 }
 
 .item {
      /* width: 30%; */
-     flex-basis: 50%;
+     flex-basis: 30%;
      margin-bottom: 1rem;
      padding: 1rem;
 }
@@ -270,16 +271,92 @@ Hide Content --*/
      display: block;
 }
 
+/*---------
+Pop Up --*/
+.popup {
+     display: none;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: 999;
+}
+
+.popup-content {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     background-color: #fff;
+     padding: 20px;
+     text-align: center;
+     border-radius: 5px;
+     color: #000;
+}
+
+.popup h2 {
+     font-size: 24px;
+     margin-bottom: 10px;
+     font-weight: 600;
+     color: #000;
+}
+
+.popup p {
+     font-size: 16px;
+     line-height: 1.5;
+     margin-bottom: 20px;
+     color: #000;
+}
+
+.popup button {
+     display: block;
+     margin: 0 auto;
+     padding: 10px 20px;
+     background-color: #333;
+     color: #fff;
+     border-radius: 5px;
+     cursor: pointer;
+}
+
+.open-popup {
+     background-color: transparent;
+     color: #fff;
+     border: 0px;
+     cursor: pointer;
+     font-size: 16px;
+}
+
+.open-popup:focus+.popup {
+     display: block;
+}
+
+.close-popup {
+     margin-top: 20px;
+}
+
 /*--------------
  Media query --*/
-
 @media (max-width: 768px) {
+     /* -- Main -- */
+     main {
+          padding: 30px;
+          height: auto;
+     }
 
+     /* -- Card -- */
+     .card-hover {
+          height: auto;
+          transform: scale(1.04) rotate(-1deg);
+          margin-bottom: 20px;
+     }
+     .text {
+          opacity: 1;
+     }
      /* -- Hide Content -- */
      .hc {
           display: none;
      }
-
 
      /* -- First Content -- */
      #first-content {
@@ -288,6 +365,7 @@ Hide Content --*/
 
      /* -- Columns -- */
      .container {
+          display: block;
           flex-direction: column;
           align-items: center;
           margin: 0px;
@@ -295,7 +373,7 @@ Hide Content --*/
      }
 
      .item {
-          width: 80%;
+          width: 100%;
           max-width: 400px;
           padding: 0px;
      }
