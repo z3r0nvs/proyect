@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- CSS IMPORT -->
+     <link rel="stylesheet" href="../css/new-pages-css/styles03.css">
+     <!-- FONT IMPORT -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+     <!-- ICONS IMPORT -->
+     <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+     <title>Actividad 03 - Pagina Personalizada</title>
+</head>
+
+<body>
+     <div
+          style="background: rgb(255,255,255); background: linear-gradient(114deg, rgba(255,255,255,1) 0%, rgba(185,212,255,1) 12%, rgba(126,177,255,1) 22%, rgba(58,136,255,1) 35%, rgba(0,102,255,1) 60%);">
+          <header>
+               <h1>ATA <span id="hide-title">- Antarctica</span></h1>
+               <span class="open" onclick="nav_active()">&#9776;</span>
+               <div id="nav" class="menu">
+                    <a href="javascript:void(0)" class="x" onclick="nav_hide()">&times;</a>
+                    <div class="menu-active">
+                         <a href="https://universitariadecolombia.edu.co">Inicio</a>
+                         <a href="https://www.instagram.com/universitaria_oficial/">Redes sociales</a>
+                    </div>
+               </div>
+          </header>
+          <div style="height: 100px;" aria-hidden="false"></div>
+          <h2 style="text-align: center;">Descubre la belleza helada de la Antártica</h2>
+          <div style="height: 50px;" aria-hidden="false"></div>
+          <img class="img-spacier" src="../img/img-new-pages/wave-haikei.svg" alt="">
+     </div>
+     <main>
+          <div style="height: 20%;" aria-hidden="false"></div>
+          <div class="container">
+               <div class="item">
+                    <p>La Antártica es el continente más austral y el quinto más grande del mundo. Está cubierta de hielo y es el lugar más frío del planeta.<br><br>A pesar de su clima extremo, es el hogar de una gran cantidad de vida marina, incluyendo ballenas, focas, pingüinos y otros animales que han evolucionado para sobrevivir en este ambiente inhóspito. <br><br>Además, la Antártica es un área importante para la investigación científica y la cooperación internacional.</p>
+               </div>
+               <div class="item">
+                    <div class="bg-iframe">
+                         <iframe
+                              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d70187087.98863065!2d-12.3285873!3d-58.80400019999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb09dff882a7809e1%3A0xb08d0a385dc8c7c7!2sAntarctica!5e1!3m2!1sen!2sus!4v1679859093570!5m2!1sen!2sus"
+                              width="400" height="300" style="border:0;width: 100%;" allowfullscreen="" loading="lazy"
+                              referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+               </div>
+          </div>
+     </main>
+     <div style="height: 50px;" aria-hidden="false"></div>
+     <img class="img-spacier" src="../img/img-new-pages/wave-haikei-blue.svg" alt="">
+     <section class="colorsection">
+          <div class="container" style="width: 65%">
+               <div class="item" style="flex-basis: 25%;">
+                    <div class="card">
+                         <div class="card-i">
+                              <div class="card-f">
+                                   <p class="title">Pinguinos 🐧</p>
+                                   <p>Hover Me</p>
+                              </div>
+                              <div class="card-b"
+                                   style="
+                              background-image: url(https://images.pexels.com/photos/48814/penguins-emperor-antarctic-life-48814.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);">
+                                   <p class="title">🐧</p>
+                                   <p>Los pingüinos son aves acuáticas que no pueden volar pero son excelentes nadadores.</p>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="item" style="flex-basis: 25%;">
+                    <div class="card">
+                         <div class="card-i">
+                              <div class="card-f">
+                                   <p class="title">Osos 🐻‍❄️</p>
+                                   <p>Hover Me</p>
+                              </div>
+                              <div class="card-b"
+                              style="
+                         background-image: url(https://images.pexels.com/photos/65320/polar-bear-bear-teddy-sleep-65320.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);">
+                                   <p class="title">🐻‍❄️</p>
+                                   <p>Los osos polares son mamíferos carnívoros que viven en la región polar del Ártico.</p>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="item" style="flex-basis: 25%;">
+                    <div class="card">
+                         <div class="card-i">
+                              <div class="card-f">
+                                   <p class="title">Focas 🦭</p>
+                                   <p>Hover Me</p>
+                              </div>
+                              <div class="card-b"
+                              style="
+                         background-image: url(https://images.pexels.com/photos/8126824/pexels-photo-8126824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);">
+                                   <p class="title">🦭</p>
+                                   <p>Las focas son mamíferos marinos que se alimentan de pescado y crustáceos.</p>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="item" style="flex-basis: 25%;">
+                    <div class="card">
+                         <div class="card-i">
+                              <div class="card-f">
+                                   <p class="title">Krill </p>
+                                   <p>Hover Me</p>
+                              </div>
+                              <div class="card-b"
+                              style="
+                         background-image: url(https://th.bing.com/th/id/R.cbf80b128d6d53d39c8282fed9364a53?rik=ehoFmj3aYdzNdg&pid=ImgRaw&r=0);">
+                                   <p class="title">BACK</p>
+                                   <p>El krill es un pequeño crustáceo que es una fuente importante de alimento para muchos animales antárticos.</p>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <p style="text-align: center;">❄️Antarctica❄️</i></p>
+          <br>
+     </section>
+</body>
+<script>
+     function nav_active() {
+          document.getElementById("nav").style.width = "100%";
+     }
+
+     function nav_hide() {
+          document.getElementById("nav").style.width = "0%";
+     }
+</script>
+
+</html>
