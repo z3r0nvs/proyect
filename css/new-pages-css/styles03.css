@@ -101,60 +101,6 @@ Image Spacier --*/
   margin-bottom: -4px;
 }
 
-/*-----------
-Nav Manu --*/
-.open {
-  float: right;
-  font-size: 30px;
-  cursor: pointer;
-  color: #fff;
-}
-
-.menu {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.146);
-  border-radius: 16px;
-  backdrop-filter: blur(20px);
-  overflow-x: hidden;
-  transition: 0.5s;
-}
-
-.menu-active {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.menu a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #000;
-  display: block;
-  transition: 0.3s;
-  font-weight: 300;
-}
-
-.menu a:hover,
-.menu a:focus {
-  color: #818181;
-}
-
-.menu .x {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-  color: #fff;
-}
-
 /*----------
 Columns --*/
 .container {
