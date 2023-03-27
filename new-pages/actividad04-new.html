@@ -26,12 +26,101 @@
           <div id="nav" class="menu">
                <a href="javascript:void(0)" class="x" onclick="nav_hide()">&times;</a>
                <div class="menu-active">
-                    <a href="../index.html">Inicio</a>
-                    <a href="#acerca">Acerca</a>
-                    <a href="#noticias">Noticias</a>
+                    <button class="tablinks" onclick="openCity(event, 'noticias')">Noticias</button><br><br>
+                    <div id="noticias" class="tabcontent">
+                         <h3>Noticias</h3><br>
+                         <div style="width: 50%;margin: 0 auto;text-align: justify;">
+                              <h2>Lanzamiento de la nueva bicicleta eléctrica de montaña: la solución perfecta para los
+                                   terrenos más exigentes</h2><br>
+                              <p>La compañía de bicicletas de renombre mundial ha lanzado su última creación: una
+                                   bicicleta eléctrica de montaña que ofrece una combinación perfecta de potencia y
+                                   agilidad. Diseñada para conquistar terrenos difíciles y pendientes empinadas, esta
+                                   bicicleta presenta una potencia máxima de 750W y una velocidad máxima de 28 mph.</p>
+                              <br>
+                              <hr>
+                              <br>
+                              <h2>La bicicleta plegable: la solución definitiva para la movilidad urbana</h2>
+                              <br>
+                              <p>La bicicleta plegable ha ganado popularidad en todo el mundo gracias a su diseño
+                                   compacto y funcional. Perfecta para la movilidad urbana, esta bicicleta es fácil de
+                                   llevar en el metro, el autobús o el coche, y se pliega en cuestión de segundos para
+                                   un almacenamiento conveniente en espacios pequeños. Además, las bicicletas plegables
+                                   son cada vez más sofisticadas y se adaptan a las necesidades de cualquier ciclista
+                                   urbano, con características como neumáticos antipinchazos, guardabarros, luces y
+                                   soportes para transportar cargas ligeras.</p>
+                         </div>
+                    </div>
+
+                    <button class="tablinks" onclick="openCity(event, 'acerca')">Acerca</button><br><br>
+                    <div id="acerca" class="tabcontent">
+                         <h3>Acerca</h3><br>
+                         <div style="width: 50%;margin: 0 auto;">
+                              <p>Somos un grupo de entusiastas de las dos ruedas que amamos la naturaleza y el deporte.
+                                   En este espacio encontrarás información útil y entretenida sobre todo lo relacionado
+                                   con las bicicletas, desde noticias sobre el mundo del ciclismo hasta recomendaciones
+                                   de rutas para disfrutar en tu tiempo libre. Nuestro objetivo es fomentar el uso de la
+                                   bicicleta como medio de transporte sostenible y saludable, y por eso queremos
+                                   compartir contigo nuestra pasión por este maravilloso mundo. ¡Acompáñanos en este
+                                   viaje en bici!</p>
+                         </div>
+                    </div>
                </div>
           </div>
      </header>
+     <div style="height: 100px;"></div>
+     <main>
+          <div class="container">
+               <div class="item" style="flex-basis: 40%;">
+                    <img src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                         alt="" style="clip-path: polygon(0 0, 50% 100%, 100% 0);">
+               </div>
+               <div class="item" style="flex-basis: 40%;">
+                    <h2>Solo un cambio</h2>
+                    <span>16 APRIL 2022</span>
+                    <p>
+                         Las bicicletas veloheld combinan un diseño minimalista con enorme calidad. La gama de productos
+                         veloheld nos deleita con su belleza y sencillez. Las bicicletas en blanco y negro presentan una
+                         corta distancia entre ejes, una sola marcha y un manillar estrecho... Todo lo que necesitas
+                         para explorar las calles de la ciudad.<br><br>
+                         Para los que quieran crear su propia bicicleta, los marcos Veloheld están disponibles en tres
+                         tamaños y dos colores, y son el punto de partida perfecto. Continuar leyendo...
+                    </p>
+               </div>
+          </div>
+          <!-- <img src="../img/img-new-pages/triangle-neon.svg" alt=""> -->
+          <h2>Mas Articulos</h2>
+          <div class="container">
+               <div class="item">
+                    <img src="../img/more1.jpg" alt="">
+                    <hr><br>
+                    <p>Historia de la marca:<br><a href="https://conexioncapital.co/bicicletas-tandem-una-hermosa-tendencia-en-bogota/">Ciclas Tandem</a></p><br>
+                    <hr><br>
+                    <p>Marcos Todoterreno: <br><a href="https://solobici.es/5-proyectos-innovadores-para-el-mundo-de-las-bicis/#:~:text=5%20PROYECTOS%20INNOVADORES%20PARA%20EL%20MUNDO%20DE%20LAS,IMPRINT%20BICYCLE%20GRIPS%20...%205%205-%20MUSGUARD%20">Innovaciones en la fabricación y reparación de bicicletas</a></p>
+               </div>
+               <div class="item">
+                    <img src="../img/more2.jpg" alt="">
+                    <hr><br>
+                    <p>Diario de viaje:<br><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2020_1_CAMPOS_FERNANDEZ_M.pdf">Un cuaderno con los mejores</a></p><br>
+                    <hr><br>
+                    <p>La diez novedades de 2024:<br><a href="">Un vistazo a lo que esta por venir</a></p>
+               </div>
+               <div class="item">
+                    <img src="../img/more3.jpg" alt="">
+                    <hr><br>
+                    <p>Revisión del producto: <hr><a href="https://meollo.net/es/las-mejores-cestas-para-bicicleta/">No todas las cestas</a></p><br>
+                    <hr><br>
+                    <p>Defensa del carril para bicis:<br><a href="https://mintransporte.gov.co/publicaciones/9519/gobierno-nacional-presenta-guia-para-promover-la-proteccion-de-los-ciclistas-en-las-vias-del-pais/#:~:text=Siempre%20modere%20su%20velocidad%20cuando%20va%20a%20adelantar,cual%20tiene%20el%20derecho%20a%20circular%20por%20ella.">Conozca sus</a></p>
+               </div>
+               <div class="item">
+                    <img src="../img/more4.jpg" alt="">
+                    <hr><br>
+                    <p>Salón de la Fama de la Bicicleta: <hr><a href="https://listado.mercadolibre.com.co/juegos-juguetes/vehiculos-montables-ninos/bicicletas/#redirectedFromVip">La Spitfire </a></p><br>
+                    <hr><br>
+                    <p>Encuesta a los lectores:<br><a href="https://www.ejemplos.co/encuestas/">Comparta su opinión con nosotros!</a></p>
+               </div>
+          </div>
+          <div style="height: 100vh;"></div>
+     </main>
 </body>
 <script>
      function nav_active() {
@@ -40,6 +129,22 @@
 
      function nav_hide() {
           document.getElementById("nav").style.width = "0%";
+     }
+
+     // ----------------------------------
+
+     function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+               tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+               tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
      }
 </script>
 
