@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<style>
+		code {
+			border-radius: 10px;
+		}
+
+		code table {
+			margin: 10px !important;
+		}
+
+		::-webkit-scrollbar {display: none;}
+	</style>
+	<div class="reveal">
+		<div class="slides">
+
+			<!-- SLIDES BEGINING  -->
+
+			<!-- SECTION #1 -->
+			<section data-background-video="video-banner.mp4" data-background-video-loop data-background-video-muted>
+				<p style="font-family: monospace;">TIPOS DE ARCHIVOS</p>
+				<h2 class="r-fit-text">Análisis comparativo</h2>
+				<p><span style="display: inline-block;" class="fragment  fade-up">| Planos |&nbsp;</span><span
+						style="display: inline-block;" class="fragment fade-up">&nbsp;| XML |</span><span
+						style="display: inline-block;" class="fragment fade-up">&nbsp;| JSON |</span><span
+						style="display: inline-block;" class="fragment fade-up">&nbsp;| Parquet |</span></p>
+			</section>
+
+			<!-- SECTION #2 -->
+			<section>
+				<section data-transition="slide" data-background="#1d89b3">
+					<h2>Archivos</h2>
+					<p>| Planos |</p>
+				</section>
+				<section>
+					<span>| Archivos Planos |</span>
+					<p style="font-size: xx-large;">Los archivos planos son un tipo de archivo de texto sin formato
+						estructurado, en el cual los
+						datos se encuentran organizados en una secuencia de caracteres. No hay ninguna jerarquía o
+						relación predefinida entre los datos, lo que los hace fáciles de leer y editar, pero
+						difíciles
+						de procesar por computadora sin procesamiento adicional.</p>
+				</section>
+				<section data-transition="slide" data-background="#1d89b3">
+					<span style="font-size: large;">| Archivos Planos |</span>
+					<h2>Ejemplos</h2>
+				</section>
+				<section>
+					<span style="font-size: large;">| Ejemplos |</span>
+					<p>Archivos de texto sin formato (.txt)</p>
+					<p style="font-size: x-large;">Estos archivos contienen texto sin formato y no tienen ninguna
+						estructura definida. Son comunes en el procesamiento de lenguaje natural, donde se
+						utilizan para entrenar modelos de aprendizaje automático.</p>
+				</section>
+				<section data-transition="slide" data-background="#1d89b3">
+					<span style="font-size: large;">| Ejemplos |</span>
+					<p>Archivos de configuración (.conf)</p>
+					<p style="font-size: x-large;">Estos archivos contienen configuraciones para aplicaciones o
+						sistemas operativos. Son comunes en sistemas operativos Linux, donde se utilizan para
+						configurar la red, el hardware y otros ajustes del sistema.</p>
+				</section>
+				<section>
+					<span style="font-size: large;">| Ejemplos |</span>
+					<p>Archivos de copia de seguridad (.bak)</p>
+					<p style="font-size: x-large;">Estos archivos contienen copias de seguridad de datos o
+						información del sistema. A menudo se utilizan para restaurar datos en caso de pérdida o
+						daño del sistema.</p>
+				</section>
+				<section data-transition="slide" data-background="#1d89b3">
+					<span style="font-size: large;">| Ejemplos |</span>
+					<p>Archivos de valores separados por tabulaciones (.tsv)</p>
+					<p style="font-size: x-large;">Son similares a los archivos CSV, pero utilizan tabulaciones en
+						lugar de comas para separar los valores. Se utilizan comúnmente para almacenar datos
+						tabulares.</p>
+				</section>
+				<section>
+					<span style="font-size: large;">| Ejemplos |</span>
+					<p>Archivos de registro (.log)</p>
+					<p style="font-size: x-large;">Estos archivos contienen registros de eventos o actividades que
+						ocurren en un sistema o aplicación. Los archivos de registro se utilizan para el monitoreo
+						y la solución de problemas en sistemas informáticos.</p>
+				</section>
+				<section data-transition="slide" data-background="#1d89b3">
+					<span style="font-size: large;">| Ejemplos |</span>
+					<p>Archivos de intercambio de datos electrónicos (.edx)</p>
+					<p style="font-size: x-large;">Estos archivos se utilizan para intercambiar datos entre
+						sistemas informáticos y no tienen una estructura definida. Son comunes en la industria de
+						la salud, donde se utilizan para compartir información del paciente entre diferentes
+						proveedores de atención médica.</p>
+				</section>
+				<section>
+					<span style="font-size: large;">| Ejemplos |</span>
+					<p>Archivos de valores separados por comas (.csv)</p>
+					<p style="font-size: x-large;">Estos archivos contienen datos estructurados separados por
+						comas. Son comunes en aplicaciones como hojas de cálculo y bases de datos, donde se
+						utilizan para almacenar y compartir datos.</p>
+				</section>
+			</section>
+
+			<!-- SECTION #3 -->
+			<section>
+				<section data-transition="slide" data-background="#b302b3">
+					<h2>Archivos</h2>
+					<p>| XML |</p>
+				</section>
+				<section>
+					<span>| Archivos XML |</span>
+					<p style="font-size: xx-large;">Los archivos XML son un formato de archivo de texto que se
+						utiliza para almacenar y
+						compartir información estructurada mediante etiquetas que describen los datos de forma
+						legible por humanos y por máquinas. Este formato es ampliamente utilizado para el
+						intercambio de información entre diferentes sistemas informáticos en diversas
+						aplicaciones.</p>
+				</section>
+				<section data-transition="slide" data-background="#b302b3">
+					<span style="font-size: large;">| Archivos Planos |</span>
+					<h2>Ejemplo</h2>
+					<pre data-id="code-animation"><code class="hljs" style="background: rgba(0, 0, 0, 0.59);backdrop-filter: blur(7.7px);" data-trim data-line-numbers>
+						<persona>
+							<nombre>María</nombre>
+							<edad>28</edad>
+							<profesion>Abogada</profesion>
+						</persona>
+					</code></pre>
+					<p style="font-size: xx-large;">Este ejemplo describe una persona utilizando etiquetas XML para
+						definir los elementos que describen los datos, como el nombre, la edad y la profesión. El
+						elemento principal es <persona>, y cada uno de los atributos está contenido dentro de
+							etiquetas correspondientes.</p>
+				</section>
+			</section>
+			<!-- SECTION #4 -->
+			<section>
+				<section data-transition="slide" data-background="#ffff00">
+					<h2>Archivos</h2>
+					<p>| JSON |</p>
+				</section>
+				<section>
+					<span>| Archivos JSON |</span>
+					<p style="font-size: xx-large;">JSON <strong>(JavaScript Object Notation)</strong> es un
+						formato de archivo de texto que se utiliza para almacenar y compartir datos estructurados.
+						Es un formato de intercambio de datos que utiliza una sintaxis similar a la de los objetos
+						en JavaScript, lo que lo hace fácilmente legible por humanos y por máquinas.</p>
+				</section>
+				<section data-transition="slide" data-background="#ffff00">
+					<span style="font-size: large;">| Archivos Planos |</span>
+					<h2>Ejemplo</h2>
+					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+						{
+							"nombre": "Juan",
+							"edad": 25,
+							"profesion": "Programador"
+						}
+					</code></pre>
+					<p style="font-size: xx-large;">Este archivo describe una persona utilizando tres pares de
+						clave-valor que describen sus atributos. Este archivo puede ser utilizado para almacenar y
+						compartir información de personas en una forma estructurada.</p>
+				</section>
+			</section>
+
+			<!-- SECTION #5 -->
+			<section>
+				<section data-transition="slide" data-background="#00ffff">
+					<h2>Archivos</h2>
+					<p>| Parquet |</p>
+				</section>
+				<section>
+					<span>| Archivos Parquet |</span>
+					<p style="font-size: xx-large;">Parquet es un formato de archivo de almacenamiento de datos de
+						columnas optimizado para el procesamiento de datos en big data y sistemas distribuidos.
+						Los archivos Parquet están diseñados para mejorar el rendimiento de las consultas y el
+						procesamiento de datos en grandes conjuntos de datos.</p>
+				</section>
+				<section data-transition="slide" data-background="#00ffff">
+					<span style="font-size: large;">| Archivos Planos |</span>
+					<h2>Ejemplo</h2>
+					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+						employee.parquet/
+						|-- nombre/
+						|   |-- Juan
+						|   |-- Ana
+						|   |-- Pedro
+						|-- edad/
+						|   |-- 25
+						|   |-- 30
+						|   |-- 35
+						|-- género/
+						|   |-- M
+						|   |-- F
+						|   |-- M
+					</code></pre>
+					<div style="display: flex;">
+						
+						<table style="font-size: large;">
+							<thead>
+								<tr>
+									<th>nombre</th>
+									<th>edad</th>
+									<th>género</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Juan</td>
+									<td>25</td>
+									<td>M</td>
+								</tr>
+								<tr>
+									<td>Ana</td>
+									<td>30</td>
+									<td>F</td>
+								</tr>
+								<tr>
+									<td>Pedro</td>
+									<td>35</td>
+									<td>M</td>
+								</tr>
+							</tbody>
+						</table>
+						<p style="font-size: large;">Este formato se basa en una estructura de archivo de columna,
+							lo que significa que los datos se almacenan por columnas en lugar de por filas, lo que
+							permite una mayor compresión y lectura selectiva de datos.</p>
+					</div>
+					
+				</section>
+			</section>
+			<!-- <section data-background-iframe="index.html" data-background-interactive>
+				<div
+					style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+					<h2>Iframe Backgrounds</h2>
+					<p>Since reveal.js runs on the web, you can easily embed other web content. Try interacting with the
+						page in the background.</p>
+				</div>
+			</section> -->
+
+			<!-- SECTION #6 -->
+			<!-- SLIDES END -->
+
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
